@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day.
+- You can ask for tutor's help.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to achieve a great display.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers needs inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <a class="navbar-brand" href="#"
+        >Petras Albums</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only"
+                >(current)</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+
+    <div class="container">
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
+      >
+        <div class="col album">Column</div>
+        <div class="col album">Column</div>
+        <div class="col album">Column</div>
+        <div class="col album">Column</div>
+      </div>
+
+      <div class="jumbotron mt-4">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple
+          jumbotron-style component for calling
+          extra attention to featured content or
+          information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography
+          and spacing to space content out within
+          the larger container.
+        </p>
+      </div>
+
+      <ul class="list-group mb-4">
+        <li class="list-group-item active">
+          Hall of Shame
+        </li>
+        <li class="list-group-item">
+          Dapibus ac facilisis in
+        </li>
+        <li class="list-group-item">
+          Morbi leo risus
+        </li>
+        <li class="list-group-item">
+          Porta ac consectetur ac
+        </li>
+        <li class="list-group-item">
+          Vestibulum at eros
+        </li>
+      </ul>
+
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4"
+        >
+          <div class="col">
+            <img
+              src="/img/1.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/2.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/3.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/4.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/5.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/6.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/7.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/8.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/9.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/10.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/11.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="/img/12.jpg"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"
+          >Place sticky footer content here.</span
+        >
+      </div>
+    </footer>
+
+    <!-- EXERCISE 4
+            Create a section for the album review.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Lenght
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+
+    <!-- EXTRA:
+         EXERCISE 9
+            Create album details that are going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+        -->
+
+    <!--
+            EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+        -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
